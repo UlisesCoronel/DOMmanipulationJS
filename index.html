@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulación DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Carrito de compras</h1>
+    <main>
+      <div class="container__frutas">
+        <article class="container__frutas-box">
+          <span class="container__frutas-tittle">Frutilla 🍓</span>
+          <button class="container__frutas-btn" data-fruta="Frutilla">
+            Agregar
+          </button>
+        </article>
+
+        <article class="container__frutas-box">
+          <span class="container__frutas-tittle">Banana 🍌</span>
+          <button class="container__frutas-btn" data-fruta="Banana">
+            Agregar
+          </button>
+        </article>
+
+        <article class="container__frutas-box">
+          <span class="container__frutas-tittle">Naranja 🍊</span>
+          <button class="container__frutas-btn" data-fruta="Naranja">
+            Agregar
+          </button>
+        </article>
+
+        <article class="container__frutas-box">
+          <span class="container__frutas-tittle">Kiwi 🥝</span>
+          <button class="container__frutas-btn" data-fruta="Kiwi">
+            Agregar
+          </button>
+        </article>
+      </div>
+      <section>
+        <ul id="carrito"></ul>
+      </section>
+    </main>
+
+    <template id="template__li">
+      <li>
+        <span class="carrito__nombre">ejemplo</span>
+        <span class="carrito__cantidad">3</span>
+      </li>
+      <hr />
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

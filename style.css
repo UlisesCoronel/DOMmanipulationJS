@@ -1,0 +1,65 @@
+* {
+  font-family: "Commissioner", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+}
+.container__frutas {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: space-evenly;
+}
+
+.container__frutas-box {
+  margin: 0.5em;
+  border: 2px solid #bbb;
+  border-radius: 0.3em;
+  padding: 0.5em;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__frutas-tittle {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.container__frutas-btn{
+  margin: 1em;
+  width: 100%;
+  padding: 0.5em 0;
+}
+
+section {
+  margin-top: 2em;
+}
+
+ul {
+  display: none;
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid #bbb;
+  border-radius: 0.3em;
+  list-style: none;
+}
+
+li {
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrito__cantidad {
+  font-weight: 600;
+  color: red;
+}
