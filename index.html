@@ -17,45 +17,72 @@
       <div class="container__frutas">
         <article class="container__frutas-box">
           <span class="container__frutas-tittle">Frutilla 🍓</span>
-          <button class="container__frutas-btn" data-fruta="Frutilla">
+          <span class="container__frutas-precio">$300</span>
+          <button class="container__frutas-btn" data-fruta="Frutilla" data-precio="300">
             Agregar
           </button>
         </article>
 
         <article class="container__frutas-box">
           <span class="container__frutas-tittle">Banana 🍌</span>
-          <button class="container__frutas-btn" data-fruta="Banana">
+          <span class="container__frutas-precio">$180</span>
+          <button class="container__frutas-btn" data-fruta="Banana" data-precio="180">
             Agregar
           </button>
         </article>
 
         <article class="container__frutas-box">
           <span class="container__frutas-tittle">Naranja 🍊</span>
-          <button class="container__frutas-btn" data-fruta="Naranja">
+          <span class="container__frutas-precio">$120</span>
+          <button class="container__frutas-btn" data-fruta="Naranja" data-precio="120">
             Agregar
           </button>
         </article>
 
         <article class="container__frutas-box">
           <span class="container__frutas-tittle">Kiwi 🥝</span>
-          <button class="container__frutas-btn" data-fruta="Kiwi">
+          <span class="container__frutas-precio">$430</span>
+          <button class="container__frutas-btn" data-fruta="Kiwi" data-precio="430">
             Agregar
           </button>
         </article>
       </div>
-      <section>
+      <section class="section">
         <ul id="carrito"></ul>
       </section>
+
+      <section class="section">
+        <ul class="carrito__total-container"></ul>
+      </section>
+
+      <template class="templateTotal">
+        <li>
+          <span class="carrito__total-compra"
+            >Total compra: $<span class="carrito__total-precio">1000</span>
+          </span>
+          <button class="carrito__total-finalizar">Finalizar compra</button>
+        </li>
+      </template>
+
+      <template id="template__li">
+        <li class="carrito_producto">
+          <span class="carrito__nombre">ejemplo</span>
+          <span class="carrito__cantidad">3</span>
+        </li>
+        <li class="carrito__subtotal">
+          <span
+            >Total producto: $<span class="carrito__subtotal-unitario"
+              >150</span
+            ></span
+          >
+          <div class="carrito__boton">
+            <button class="carrito__boton-agregar">Agregar</button>
+            <button class="carrito__boton-quitar">Quitar</button>
+          </div>
+        </li>
+      </template>
+
+      <script src="app.js"></script>
     </main>
-
-    <template id="template__li">
-      <li>
-        <span class="carrito__nombre">ejemplo</span>
-        <span class="carrito__cantidad">3</span>
-      </li>
-      <hr />
-    </template>
-
-    <script src="app.js"></script>
   </body>
 </html>
